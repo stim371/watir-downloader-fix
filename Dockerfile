@@ -1,6 +1,6 @@
 FROM ruby:2.5.3-alpine3.9
 
-RUN apk update && apk add build-base postgresql-dev tzdata nodejs xvfb
+RUN apk update && apk add build-base tzdata nodejs xvfb sqlite-dev
 
 RUN mkdir -p /app
 # Set working directory
